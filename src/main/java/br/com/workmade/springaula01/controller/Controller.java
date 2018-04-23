@@ -5,14 +5,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/teste")
+@RequestMapping("/spring-aula01")
 public class Controller {
 	
 	@GetMapping()
 	public String seuNome(){
 		
-		return "Marcos";
+		return "Bem-Vindo novamente Marcos";
 	}
 
-	
+	@GetMapping("/outro")
+	public String outroNome(){
+		
+		return "Bem-Vindo a você também";
+	}
 }
